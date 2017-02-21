@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body><center>
+  <h1>Formulario de Datos</h1>
+  <section id="Formulario">
+    <form class="" action="index.html" method="post">
+      <div class="">
+        <label for="nombre">Nombre </label></br>
+        <input id="nombre" type="text" name="text" required>
+      </div></br>
+      <div class="">
+        <label for="apellido">Apellido</label></br>
+        <input id="apellido" type="text" name="apellido" required>
+      </div></br>
+      <div class="">
+        <label for="telefono">Teléfono</label></br>
+        <input id="telefono" type="" name="telefono" pattern="^[9]\d{8}$" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" maxlength="9" title="El número telefonico debe empezar con 9" required>
+      </div></br>
+      <div class="">
+        <label for="escoge">Escoge tu carro para continuar</label></br>
+        <select id="escoge" class="" name="escoge" required="">
+          <option value="">Escoge tu carro</option>
+          <option value="1">Volvo</option>
+          <option value="2">Saab</option>
+          <option value="3">Mercedes</option>
+          <option value="4">Audi</option>
+        </select>
+      </div></br>
+      <div class="">
+        <label for="email">Email</label></br>
+        <input id="email" type="email" name="email" required>
+      </div></br>
+      <div class="">
+        <label for="contraseña">Crea tu contraseña</label></br>
+        <input id="contraseña" type="password" name="contraseña" pattern=".{6,}" title="6 o más caracteres" required>
+      </div></br>
+      <input type="submit"name="" value="send">
+    </form>
+  </section>
+</body></center>
+</html>
